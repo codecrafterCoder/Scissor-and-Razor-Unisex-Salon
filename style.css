@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #000;
+    border-bottom: 1px solid #D4AF37;
+}
+
+.logo img {
+    height: 150px;
+    width: auto;
+    border: 80px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #D4AF37;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.75)
+        ),
+        url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1600&q=80');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #D4AF37;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #d6d6d6;
+}
+
+/* Buttons */
+
+.hero-buttons {
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #D4AF37;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
+}
+
+.btn-outline:hover {
+    background: #D4AF37;
+    color: black;
+}
+
+/* Services */
+
+.services-preview {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.services-preview h2 {
+    color: #D4AF37;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: #181818;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    border-color: #D4AF37;
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #D4AF37;
+    margin-bottom: 10px;
+}
+
+.contact-section{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-section h2{
+    font-size: 40px;
+    color: gold;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-section p{
+    font-size: 18px;
+    margin: 15px 0;
+    color: #ddd;
+}
+
+.contact-section .btn{
+    display: inline-block;
+    margin: 15px 10px;
+    padding: 14px 30px;
+    background: transparent;
+    border: 2px solid gold;
+    color: gold;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact-section .btn:hover{
+    background: gold;
+    color: #111;
+    transform: translateY(-3px);
+}
+
+footer{
+    background: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 35px 20px;
+    border-top: 1px solid #D4AF37;
+}
+
+footer h3 {
+    color: #D4AF37;
+    margin-bottom: 10px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width: 768px){
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.4rem;
+    }
+
+    .logo img {
+        height: 65px;
+    }
+}
+.booking-section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.booking-form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.booking-form input,
+.booking-form select{
+    padding:15px;
+    border:none;
+    border-radius:6px;
+}
+
+.booking-form button{
+    padding:15px;
+    background:#D4AF37;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+ /* About Section */
+
+.about {
+    padding: 80px 10%;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+.about h2 {
+    font-size: 42px;
+    color: gold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #dcdcdc;
+}
+
+.owners {
+    color: gold;
+    font-size: 20px;
+    font-weight: bold;
+}
+ .instagram-btn{
+    margin: 15px ;
+ }
+
+ /* Mobile Responsive */
+
+@media (max-width: 768px){
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .hero h2{
+        font-size: 24px;
+    }
+
+    .about h2,
+    .services h2,
+    .contact h2{
+        font-size: 30px;
+    }
+
+    .service-card{
+        width: 100%;
+    }
+
+    .contact .btn{
+        display:block;
+        width:80%;
+        margin:10px auto;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+/* Gallery Section */
+
+.gallery-section {
+    background: #111;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    color: gold;
+    font-size: 42px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid gold;
+    transition: transform 0.3s ease;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid gold;
+    transition: transform 0.3s ease;
+}
+
+.reviews-section{
+    background:#111;
+    padding:80px 10%;
+    text-align:center;
+}
+
+.reviews-section h2{
+    color:gold;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.review-card{
+    background:#1a1a1a;
+    border:2px solid gold;
+    border-radius:15px;
+    padding:25px;
+    margin:20px auto;
+    max-width:700px;
+    color:white;
+    box-shadow:0 0 15px rgba(255,215,0,0.2);
+}
+
+.review-card h3{
+    margin-bottom:15px;
+}
+
+.review-card span{
+    color:gold;
+    font-weight:bold;
+}
+
+.whatsapp-float{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.instagram-float{
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #E1306C;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: 0.3s 
+    }
+
+
+.whatsapp-float:hover,
+.instagram-float:hover{
+    transform: scale(1.1);
+}
+
+.map-container{
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
