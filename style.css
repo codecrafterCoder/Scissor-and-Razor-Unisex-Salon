@@ -23,9 +23,9 @@ body {
 }
 
 .logo img {
-    height: 150px;
+    height: 300px;
     width: auto;
-    border: 80px;
+    border: 100px;
 }
 
 .nav-links {
