@@ -1,4 +1,3 @@
-alert("script connected");
 
 document.addEventListener("DOMContentLoaded", () => {
 
